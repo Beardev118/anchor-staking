@@ -1,0 +1,17 @@
+[features]
+seeds = false
+[programs.localnet]
+anchor_staking = "71RRavF9hhoqRePEMEXYJPJoYeG6HSp1YqorBJMY7cLw"
+
+[programs.devnet]
+anchor_staking = "71RRavF9hhoqRePEMEXYJPJoYeG6HSp1YqorBJMY7cLw"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/updev/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
